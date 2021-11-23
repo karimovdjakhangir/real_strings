@@ -7,7 +7,7 @@
 int main() {  
     char a[100];
     printf("Enter a string to reverse: ");
-    scanf("%s", &a);
+    fgets(a, sizeof(a), stdin);
     int volume = strlen(a);
     for(char i=volume-1; i>=0; i--){
         printf("%c", a[i]);
